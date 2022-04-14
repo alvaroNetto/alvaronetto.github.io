@@ -75,11 +75,11 @@ nav ul li a{
 }
 
 .image{
-    height: 700px;
+    height: 400px;
     position: absolute;
     bottom: 0px;
     left: 90%;
-    transform: translateX(-50%);
+    transform: translateX(-84%);
 }
 
 
@@ -221,27 +221,26 @@ footer p:nth-child(2){
     width: 500px;
     text-align: center;
 }
-@media screen and (max-width: 768){
+@media (max-width: 768){
     section{
-        width: 100%;
+        margin: 0;
         padding: 0;
-    }
-    .image{
-        height: 300px;
-        display: flex;
     }
     
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
+ 
     body{
         width: 100%;
+            margin: 0;
+            padding: 0;
     }
-    nav ul li {
+    /* nav ul li {
         float: none;
         text-align: center;
         width: 100%;
-    }
+    } */
     .image{
         height: 300px;
         display: flex;
