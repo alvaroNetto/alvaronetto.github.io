@@ -1,22 +1,46 @@
 
 body{
-    background-color: grey;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     padding: 0px;
     margin: 0px;
 
 }
+/* nav ul li{
+    float: left;
+}
+nav ul li a:hover:not(.active){
+    display: block; 
+    background-color: #505050;
+    height: 60px;
+}
+.active{
+    background-color: #04AA6D;
+}
+.link{
+    color: white;
+}
+.link:hover{
+    color: purple;
+}
+*/
+.aux{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+} 
 ul{
-    list-style: none;
+    list-style-type: none;
 }
 a{
     text-decoration: none;
+    font-size: 25px;
 }
 section{
     width: 100%;
-    height: 95vh;
-    background-image: url(img/im.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
 }
 
@@ -35,6 +59,7 @@ nav ul{
 
 }
 nav ul li a{
+    display: block;
     margin-right: 30px;
     font-family: "Montserrat", sans-serif;
     color: #505050;
@@ -58,28 +83,28 @@ nav ul li a{
     
 }
 .textCont p:nth-child(3){
-    font-family: myriad pro regular;
+    font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 30px;
     line-height: 30px;
 }
 .textCont{
-    line-height: 0px;
     margin: 45px 0px 25px;
 }
-.textCont{
+/* .textCont{
     position: absolute;
     left: 13%;
     top: 42%;
     transform: translate(-13%, -42%);
-}
+} */
 
 .image{
-    height: 350px;
-    position: absolute;
-    bottom: 0px;
-    left: 90%;
-    transform: translateX(-50%);
+    height: 500px;
+    width: 361px;
+    object-fit: cover;
+    position: fixed;
+    bottom: 40px;
+    
 }
 
 
@@ -111,6 +136,12 @@ nav ul li a{
     font-weight: bold;
     font-size: 23px;
     line-height: 0px;
+}
+.format{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contSobre p:nth-child(2)
@@ -148,77 +179,41 @@ nav ul li a{
 
 }
 .contato p{
-    color: black;
+    margin: 0;
+    color: white;
     font-size: 30px;
-    font-family: calibri;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    border-bottom: 2px solid #ffffff;
+    text-align: center;
+    padding: 0px px 0px 30px;
 
 }
-.contato button
-{
-    width: 200px;
-    height: 40px;
-    background-color: #ffffff;
-    outline: none;
-    border: none;
-    font-size: 40px;
-    font-weight: bold;
-}
 
-.contato
-{
-width: 100;
-height: 280px;
-background-image: url(img/back.jpg);   
-background-size: cover;
-background-repeat: no-repeat;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-.contato p 
-{
-    columns: #ffffff;
-    font-size: 30px;
-    font-family: calibri;
-    font-weight: bold;
-    border-bottom: 2px solid #ffffff;
-
-}
-.contato button
-{
-    width: 200px;
-    height: 40px;
-    background-color: #ffffff;
-    outline: none;
-    border: none;
-    font-size: 14px;
-    font-weight: bold;
-
-}
 footer{
-    height: 250px;
+    background-color: white;
+    height: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
 }
 footer p{
-    font-family: calibri;
+    margin: 0;
 }
 footer p:nth-child(1){
+    margin: 0;
     font-weight: bold;
     color: #191919;
-    line-height: 0;
-    font-size: 30px;
 }
 footer p:nth-child(2){
+    margin: 0;
     color: #191919;
-    font-size: 30px;
-    width: 500px;
+    width: 100%;
     text-align: center;
 }
 @media screen and (max-width: 768){
@@ -235,10 +230,14 @@ footer p:nth-child(2){
     }
     .image{
         height: 300px;
+        width: 202px;
     }
     .textCont p:nth-child(1)
     {
         font-size: 26,4px;
+    }
+    .textCont p:nth-child(2){
+        margin: 0;
     }
     .textCont p:nth-child(3){
         font-size: 36;
@@ -267,5 +266,8 @@ footer p:nth-child(2){
         color: #070707;
         font-size: 16px;
         font-family: calibri;
+    }
+    footer{
+        height: 60px;
     }
 }
